@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Language" content="zh-cn">
+<title></title>
+<link href="./assets/css/reset.css" rel="stylesheet"/>
+<link href="./assets/css/style.css" rel="stylesheet"/>
+<script type="text/javascript" src="./assets/js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript">
+function changeIframe() {
+var path = $(this).attr('path')
+$(this).addClass('is-active').siblings().removeClass("is-active")
+$('.main--right iframe').attr('src', path)
+}
+$(document).ready(function() {
+if(window.ActiveXObject || "ActiveXObject" in window) {
+document.getElementById('browsehappy').style.display = 'block'
+} else {
+document.getElementById('browsehappy').style.display = 'none'
+}
+$('.nav__item').bind('click',changeIframe)
+});
+</script>
+</head>
+<body>
+  <p id="browsehappy" class="browsehappy">为了获得更好的浏览体验，推荐您使用最新<a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank">Chrome浏览器、</a><a href="http://www.firefox.com.cn/download/" target="_blank">Firefox浏览器、</a>或者<a href="http://ie.sogou.com/" target="_blank">搜狗浏览器</a>打开本聊天记录HTML文件</p>
+  <p class="browsehappy">如果出现大部分好友头像显示为默认图片、好友昵称显示错误，请前往微信备份助手消息界面点击左上角【更新好友信息】后重新导出。</p>
+<div class="container">
+<div class="top">
+<img src="assets/images/icon_title_logo.png" alt="">
+<p>微信备份助手</p>
+</div>
+<div class="line"></div>
+<div class="wrap">
+
+<div class="main--left" >
+<ul class="nav__box">
+<li class="nav__item" path="content\💹三只熊新零售招商1⃣群.html">
+<div class="icon"><img src="http://wx.qlogo.cn/mmcrhead/5K48YNcpF3beNiawLP8uZHRibricp9jlvRdJlI2AWLrdPrAhqicpDEBFSYMkkeia1I4wRuOo2gibCdS5QwEXxmkzbK3eu4nBicsibEgS/0" /></div>
+<div class="content">
+<p>💹三只熊新零售招商1⃣群</p>
+</div>
+<div class="time">
+<p>昨天</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="main--right">
+<iframe src="content\💹三只熊新零售招商1⃣群.html" frameborder="no"></iframe>
+</div>
+
+</div>
+<div class="mask"></div>
+</div>
+<script type="text/javascript">
+$(function() {
+window.addEventListener("message",function(e) {
+if (e.data == 'open') {
+$('.mask').show();
+}else{
+$('.mask').hide();
+}
+}, false);
+});
+</script>
+</body>
+</html>
+

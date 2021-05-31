@@ -1,0 +1,155 @@
+/* reset.css */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;}
+ul,ol,li{list-style: none}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+span,img,a{vertical-align: middle;}
+a{position: relative;color:#3C3C3C;border:none;outline:none;text-decoration: none;}
+a img {border:none;outline:none;}
+a:focus,li:focus,div:focus{outline:0; outline:none;}
+
+html{height: 100%}
+body{
+  height: 100%;
+  overflow-x: hidden;
+  /* background: #fff; */
+}
+.cloudContent pre{
+  cursor: auto;
+}
+.cloudContent a{
+ text-decoration: underline;
+}
+.clearfloat{
+  clear: both;
+}
+#chat_chatmsglist{
+  padding: 40px 13px 0 13px;
+}
+.getdata{
+  display: none;
+}
+.chatItem {
+  cursor: pointer;
+  margin: 10px 0;
+}
+.chatItem .wrapper{
+  /* padding-left: 88px; */
+  padding-bottom: 30px;
+  position: relative;
+}
+.chatItem .wrapper .info .nickname{
+  display: inline-block;
+  font-size: 12px;
+  color: #979797;
+  margin-bottom: 4px;
+}
+.chatItem .wrapper .info .cloudContent{
+  max-width: 300px;
+  font-size: 12px;
+  color: #333333;
+}
+.chatItem .line{
+  height: 1px ;
+  background: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  right: 0px;
+
+}
+.chatItem .avatar{
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.chatItem .avatar.empty{
+  filter:alpha(opacity=0);
+  -moz-opacity:0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+.chatItem .info{
+  float: left;
+}
+.chatItem .time{
+  float: right;
+  font-size: 12px;
+  color: #979797;
+}
+.chatItem .imageBorder{
+  width: 150px;
+  max-width: 220px;
+}
+.chatItem .imgWrapper{
+  display: block;
+}
+.chatItem .video {
+  display: block;
+}
+.chatItem .video .imageBorder{
+  width: 150px;
+  max-width: 220px;
+}
+.chatItem .video .play{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  left: 50%;
+  margin-left: -17px;
+  margin-top: -17px;
+}
+.chatItem .mediaWrapper{
+  display: block;
+}
+.chatItem .mediaWrapper img{
+  float: left;
+}
+.chatItem .mediaWrapper .content{
+  float: left;
+}
+.cloudCombined .cloudBody {position: relative;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-color: transparent;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border: 1px solid #DDDDDE;background: #f4f5f7;}
+.cloudCombined .cloudContent {vertical-align: top;padding: 8px 10px;}
+.cloudCombined .cloudContent .header{
+  font-size: 14px;
+  color: #333333;
+}
+.cloudCombined .cloudContent .content{
+  font-size: 12px;
+  color: #888888;
+}
+.cloudCombined .cloudContent .footer{
+  font-size: 12px;
+  color: #888888;
+}
+.goback{
+  text-align: left;
+    font-size: 12px;
+    width: 100%;
+    padding-left: 11px;
+    line-height: 39px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d1d5db;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.goback .comeback{
+  display: table;
+}
+.goback .comeback span{
+  zoom:1;
+  display: table-cell;
+}
+.goback a span img{
+  margin-right: 3px;
+}
